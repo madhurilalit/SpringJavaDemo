@@ -6,4 +6,4 @@ RUN wget http://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.16/bin/apache-tomcat
 RUN cd /home/ubuntu/testDemo && tar xvfz tomcat.tar.gz
 RUN cp -Rv /home/ubuntu/testDemo/apache-tomcat-8.5.16/* /home/ubuntu/tomcat/
 EXPOSE 8080
-CMD /home/ubuntu/tomcat/bin/catalina.sh run
+CMD ["/home/ubuntu/tomcat/bin/catalina.sh", "run"]
